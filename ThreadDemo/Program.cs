@@ -8,6 +8,8 @@ using ThreadDemo.IO限制异步操作;
 using aa;
 using System.Runtime.ExceptionServices;
 using ThreadDemo.基元线程同步构造;
+using static ThreadDemo.混合线程同步构造.BarrierDemo;
+using ThreadDemo.混合线程同步构造;
 
 namespace ThreadDemo
 {
@@ -56,7 +58,16 @@ namespace ThreadDemo
             //用户模式构造.Demo4();
             // 自旋锁.Demo2();
             //内核构造模式.Demo();
-            内核构造模式.Demo6();
+            //内核构造模式.Demo6();
+            // BarrierTest.Go();
+            // 双检锁_Lazy.Demo();
+            //SynchronizedQueue<string> s = new SynchronizedQueue<string>();
+            //s.Enqueue("tanyo");
+            //s.Dequeue();
+            //s.Dequeue();
+            //s.Enqueue("tianyong1");
+            //s.Enqueue("tianyong2");
+            并发集合类.Demo1();
             Console.ReadKey();
         }
         public static async void Go()

@@ -87,13 +87,26 @@
     <Compile Include="基元线程同步构造\描述.cs" />
     <Compile Include="基元线程同步构造\用户模式构造.cs" />
     <Compile Include="基元线程同步构造\自旋锁.cs" />
+    <Compile Include="混合线程同步构造\AnoterHybridLock.cs" />
+    <Compile Include="混合线程同步构造\AsyncOneManyLock.cs" />
+    <Compile Include="混合线程同步构造\BarrierDemo.cs" />
+    <Compile Include="混合线程同步构造\CountdownEventDemo.cs" />
+    <Compile Include="混合线程同步构造\FclSlimDemocs.cs" />
+    <Compile Include="混合线程同步构造\MonitorDemo.cs" />
+    <Compile Include="混合线程同步构造\OneManyLock.cs" />
+    <Compile Include="混合线程同步构造\ReaderWriterLockSlimDemo.cs" />
+    <Compile Include="混合线程同步构造\双检锁-Lazy.cs" />
+    <Compile Include="混合线程同步构造\双检锁Demo.cs" />
+    <Compile Include="混合线程同步构造\并发集合类.cs" />
+    <Compile Include="混合线程同步构造\异步的同步构造.cs" />
+    <Compile Include="混合线程同步构造\总结cs.cs" />
+    <Compile Include="混合线程同步构造\条件变量模式.cs" />
+    <Compile Include="混合线程同步构造\简单混合锁.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="混合线程同步构造\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
