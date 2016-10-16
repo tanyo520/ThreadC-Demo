@@ -29,6 +29,7 @@ namespace ThreadDemo.混合线程同步构造
         //每个等待writer都通过它们在这里排队的TaskCompletionSource来唤醒
         private readonly Queue<TaskCompletionSource<Object>> m_qWaitingWriters = new Queue<TaskCompletionSource<object>>();
         //一个TaskCompletionSource收到信号，所有等待的Reader都唤醒
+        //TaskCompletionSourece http://www.cnblogs.com/1zhk/p/5399538.html
         private TaskCompletionSource<Object> m_waitingReadersSignal = new TaskCompletionSource<object>();
         private Int32 m_numWaitingReaders = 0;
         public AsyncOneManyLock()
